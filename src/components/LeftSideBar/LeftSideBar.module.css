@@ -1,0 +1,53 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+  margin: 8px auto;
+  padding: 4px;
+  align-items: stretch;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(0.75rem, calc(0.625rem + 0.625vw), 1.125rem);
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px 1px 0 #000;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+.img {
+  display: block;
+  margin: 4px auto;
+}
+
+.list {
+  margin: 4px;
+}
+
+li {
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.name {
+  color: blue;
+  background-color: #d4b4f1;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.tournament {
+  color: red;
+}
+
+.nextRace {
+  color: #6699cc;
+}
+
+p {
+  font-size: 12px;
+}

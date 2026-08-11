@@ -1,0 +1,90 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+  margin: 8px auto;
+  padding: 4px;
+  align-items: stretch;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(0.75rem, calc(0.625rem + 0.625vw), 1.125rem);
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px 1px 0 #000;
+  border-radius: 12px;
+  margin: 8px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 4px;
+  margin: clamp(0.063rem, calc(-0.083rem + 0.729vw), 0.5rem);
+  justify-content: space-between;
+}
+
+.list a svg {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s;
+}
+
+.list a:hover svg {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.list li a svg {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.pollOption {
+  margin-bottom: 12px;
+  font-size: clamp(0.75rem, calc(0.667rem + 0.417vw), 1rem);
+}
+
+.pollBar {
+  width: 95%;
+  height: 10px;
+  background: #d9d9d9;
+}
+
+.pollFill {
+  height: 100%;
+  background: #1e73be;
+  transition: width 0.5s ease;
+}
+
+.btn {
+  padding: clamp(0.063rem, calc(-0.083rem + 0.729vw), 0.5rem);
+  margin: clamp(0.063rem, calc(-0.083rem + 0.729vw), 0.5rem);
+  border-radius: clamp(0.25rem, calc(0.083rem + 0.833vw), 0.75rem);
+  cursor: pointer;
+  border: none;
+  font-size: clamp(0.75rem, calc(0.667rem + 0.417vw), 1rem);
+  background-color: #d4b4f1;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  margin: 0.5rem;
+  font-size: clamp(0.75rem, calc(0.667rem + 0.417vw), 1rem);
+}
+
+.profile {
+  margin: 4px;
+  text-decoration: none;
+}
+
+.profile:hover {
+  text-decoration: underline;
+}
+
+.interview {
+  font-size: 14px;
+  font-weight: 400;
+}

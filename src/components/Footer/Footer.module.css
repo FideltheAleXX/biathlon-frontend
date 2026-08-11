@@ -1,0 +1,39 @@
+.footer {
+  margin: 8px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 22px;
+  color: #73b5e5;
+  text-align: center;
+  margin: 12px;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  padding: 16px;
+}
+
+img {
+  width: clamp(5rem, calc(3.917rem + 5.417vw), 8.25rem);
+}
+
+.info {
+  padding: 24px;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 320px) {
+  .sponsors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}

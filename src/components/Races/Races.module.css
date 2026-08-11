@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 4px;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: clamp(23rem, calc(20.667rem + 11.667vw), 30rem);
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(16px, calc(14.667px + 0.417vw), 20px);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.stageName {
+  font-size: clamp(16px, calc(13.333px + 0.833vw), 24px);
+  font-weight: 600;
+}
+
+.stage {
+  margin: 4px;
+  font-size: 14px;
+}
+
+.location {
+  font-size: 12px;
+}
+
+.startDate {
+  margin: 4px;
+}
+
+.raceInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+  font-size: clamp(12px, calc(11.333px + 0.208vw), 14px);
+}
