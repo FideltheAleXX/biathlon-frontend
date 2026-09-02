@@ -1121,7 +1121,7 @@
         "discipline": "Sprint",
         "gender": "Men",
         "distance": "10 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1130,7 +1130,7 @@
         "discipline": "Sprint",
         "gender": "Women",
         "distance": "7.5 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1139,7 +1139,7 @@
         "discipline": "Pursuit",
         "gender": "Men",
         "distance": "12.5 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1148,7 +1148,7 @@
         "discipline": "Pursuit",
         "gender": "Women",
         "distance": "10 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1157,7 +1157,7 @@
         "discipline": "Single Mixed Relay",
         "gender": "Men & Women",
         "distance": "",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1166,7 +1166,7 @@
         "discipline": "Mixed Relay",
         "gender": "Men & Women",
         "distance": "",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       }
     ]
@@ -1184,7 +1184,7 @@
         "discipline": "Sprint",
         "gender": "Women",
         "distance": "7.5 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1193,7 +1193,7 @@
         "discipline": "Sprint",
         "gender": "Men",
         "distance": "10 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1202,7 +1202,7 @@
         "discipline": "Pursuit",
         "gender": "Women",
         "distance": "10 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1211,7 +1211,7 @@
         "discipline": "Pursuit",
         "gender": "Men",
         "distance": "12.5 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1220,7 +1220,7 @@
         "discipline": "Mass-start",
         "gender": "Women",
         "distance": "12.5 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       },
       {
@@ -1229,7 +1229,7 @@
         "discipline": "Mass-start",
         "gender": "Men",
         "distance": "15 km",
-        "status": "scheduled",
+        "status": "finished",
         "results": []
       }
     ]

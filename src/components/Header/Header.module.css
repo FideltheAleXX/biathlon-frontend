@@ -1,16 +1,24 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  margin: 16px;
-  padding: 4px;
-  border: 1px solid black;
+  flex-direction: column;
+  margin: 0 16px;
+  padding: 12px;
+  border-radius: var(--main-br);
+  background: var(--primary);
+  color: var(--font-color);
+  height: 100vh;
 }
 
-.image {
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
   width: 64px;
 }
 
-.imgContainer {
+.logoContainer {
   width: 2em;
 }
 
@@ -38,14 +46,25 @@
 
 .navLink {
   text-decoration: none;
-  color: #73b5e5;
+  color: var(--font-color);
   border-radius: 8px;
   padding: 8px 16px;
-  /* #c2dff3; */
 }
 
 .navLink:hover {
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.fotoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.mainFoto {
+  width: 1280px;
+  border-radius: var(--main-br);
 }
 
 @media (max-width: 768px) {

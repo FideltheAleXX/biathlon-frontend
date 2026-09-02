@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
+import mainFoto from '../../assets/biathlon-main.jpg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,69 +21,54 @@ const Header = () => {
     };
   }, [isOpen]);
 
+  const navItems = [
+    { id: 1, title: 'Main' },
+    { id: 1, title: 'Team' },
+    { id: 1, title: 'News' },
+    { id: 1, title: 'Tournament' },
+    { id: 1, title: 'Contacts' },
+  ];
+
   return (
     <header className={styles.header}>
-      <div className={styles.imgContainer}>
+      <div className={styles.heroSection}>
+        <div className={styles.logoContainer}>
+          <img
+            className={styles.logo}
+            src="/src/assets/biathlon-logo.svg"
+            alt="biathlon logo"
+          />
+        </div>
+
+        <div className={styles.burger} onClick={toggleMenu}>
+          {isOpen ? <RxCross1 size={40} /> : <RxHamburgerMenu size={40} />}
+        </div>
+        {isOpen && <div className={styles.backdrop} onClick={toggleMenu}></div>}
+        <nav className={`${styles.navigation} ${isOpen ? styles.open : ''}`}>
+          <ul className={styles.list}>
+            {navItems.map((item) => {
+              return (
+                <li key={item.id} className={styles.listItem}>
+                  <a
+                    className={styles.navLink}
+                    href="#"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+      <div className={styles.fotoWrapper}>
         <img
-          className={styles.image}
-          src="/src/assets/biathlon-logo.svg"
-          alt="biathlon logo"
+          className={styles.mainFoto}
+          src={mainFoto}
+          alt="main foto biathlon"
         />
       </div>
-
-      <div className={styles.burger} onClick={toggleMenu}>
-        {isOpen ? <RxCross1 size={40} /> : <RxHamburgerMenu size={40} />}
-      </div>
-      {isOpen && <div className={styles.backdrop} onClick={toggleMenu}></div>}
-      <nav className={`${styles.navigation} ${isOpen ? styles.open : ''}`}>
-        <ul className={styles.list}>
-          <li className={styles.listItem}>
-            <a
-              className={styles.navLink}
-              href="#"
-              onClick={() => setIsOpen(false)}
-            >
-              Main
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={styles.navLink}
-              href="#"
-              onClick={() => setIsOpen(false)}
-            >
-              Team
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={styles.navLink}
-              href="#"
-              onClick={() => setIsOpen(false)}
-            >
-              News
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={styles.navLink}
-              href="#"
-              onClick={() => setIsOpen(false)}
-            >
-              Tournament
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a
-              className={styles.navLink}
-              href="#"
-              onClick={() => setIsOpen(false)}
-            >
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };

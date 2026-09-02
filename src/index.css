@@ -1,3 +1,30 @@
+:root {
+  --primary: #ffffff;
+  --bg-color: #f2f7fe;
+  --font-color: #394e6a;
+  --footer-color: #021431;
+  --footer-font: #c5cbd2;
+
+  --color-base-300: #e3e9f4;
+  --color-primary: #0069ff;
+  --color-primary-content: #cee4ff;
+  --color-secondary: #463aa2;
+  --color-secondary-content: #d5d7ee;
+  --color-accent: #c148ac;
+  --color-accent-content: #0e020b;
+
+  --color-info: #94e7fb;
+  --color-info-content: #081315;
+  --color-success: #81cfd1;
+  --color-success-content: #060f10;
+  --color-warning: #efd7bc;
+  --color-warning-content: #14110d;
+  --color-error: #e58b8b;
+  --color-error-content: #120707;
+
+  --main-br: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +35,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: rgb(245, 245, 245);
+  background: var(--bg-color);
   font-family: 'Roboto', sans-serif;
 }
-
-/* :root {
-  --primary-color: ;
-  --secondary-color: ;
-  } */
