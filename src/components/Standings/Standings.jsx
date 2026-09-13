@@ -12,7 +12,11 @@ const Standings = ({ title, athletes, isOpen, setIsOpen }) => {
         </button>
 
         <div className={styles.desktop}>
-          <Table title={title} athletes={athletes} />
+          <Table
+            title={title}
+            athletes={athletes}
+            className={styles.desktopTable}
+          />
         </div>
         {isOpen && (
           <div className={styles.overlay} onClick={() => setIsOpen(false)}>

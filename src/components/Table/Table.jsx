@@ -1,6 +1,6 @@
 import styles from './Table.module.css';
 
-const Table = ({ title, athletes }) => {
+const Table = ({ title, athletes, className }) => {
   const getPositionClass = (index) => {
     if (index === 0) return styles.position1;
     if (index === 1) return styles.position2;
@@ -10,7 +10,7 @@ const Table = ({ title, athletes }) => {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={`${styles.section} ${className || ''}`}>
         <p className={styles.title}>{title}</p>
         <table className={styles.table}>
           <thead>

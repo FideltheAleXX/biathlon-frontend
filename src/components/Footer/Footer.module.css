@@ -21,7 +21,7 @@
 }
 
 .info {
-  width: 100vw;
+  width: 100%;
   background-color: var(--footer-color);
   color: var(--footer-font);
   padding: 24px;

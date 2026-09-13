@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
+import Standings from '../Standings/Standings';
+import { menAthletes, womenAthletes } from '../../../public/data/athletes';
 import styles from './Header.module.css';
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
 import mainFoto from '../../assets/biathlon-main.jpg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isStandingsMenOpen, setStandingsMenOpen] = useState(false);
+  const [isStandingsWomenOpen, setStandingsWomenOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -68,6 +72,22 @@ const Header = () => {
           src={mainFoto}
           alt="main foto biathlon"
         />
+        <div className={styles.tableMen}>
+          <Standings
+            title="Men`s Score"
+            athletes={menAthletes}
+            isOpen={isStandingsMenOpen}
+            setIsOpen={setStandingsMenOpen}
+          />
+        </div>
+        <div className={styles.tableWomen}>
+          <Standings
+            title="Women`s Score"
+            athletes={womenAthletes}
+            isOpen={isStandingsWomenOpen}
+            setIsOpen={setStandingsWomenOpen}
+          />
+        </div>
       </div>
     </header>
   );

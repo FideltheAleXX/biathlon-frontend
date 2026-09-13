@@ -6,6 +6,12 @@
   display: block;
 }
 
+.desktopTable {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
