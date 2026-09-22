@@ -18,8 +18,8 @@ const Races = () => {
       {stages.map((stage) => (
         <div key={stage.id} className={styles.stage}>
           <div className={styles.stageName}>
-            {stage.name}{' '}
-            <span className={styles.location}>({stage.location})</span>
+            <div className={styles.stageNameTextBG}></div>
+            <span className={styles.stageNameText}>{stage.name}</span>
           </div>
 
           <p className={styles.startDate}>

@@ -21,8 +21,34 @@
 }
 
 .stageName {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 128px;
+  overflow: hidden;
   font-size: clamp(16px, calc(13.333px + 0.833vw), 22px);
   font-weight: 600;
+  color: #14110d;
+  text-align: center;
+  border-radius: var(--main-br);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stageNameTextBG {
+  padding: 30px 40px;
+  width: 500px;
+  background: rgba(238, 235, 231, 0.85);
+  border-radius: var(--main-br);
+  filter: blur(3px);
+  position: relative;
+  z-index: 1;
+}
+
+.stageNameText {
+  position: absolute;
+  z-index: 2;
 }
 
 .stage {
@@ -35,6 +61,7 @@
 }
 
 .location {
+  margin-top: 4px;
   font-size: 12px;
 }
 
